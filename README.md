@@ -3,7 +3,7 @@
 This repository contains the data and code associated with the manuscript entitled: "Ghost lineages invalidate or reverse several results on gene flows" by T Tricou, E Tannier and DM de Vienne.
 
 
-* The folder `D3` contains script and datasets used for analyzing the effect of ghost lineages on the D3 statistics interpretation
+* The folder `D3` contains script and datasets used for analyzing the effect of ghost lineages on the D3 statistics (Hahn and Hibbins 2019) interpretation
 
 * The folder `Anopheles` contains script and datasets used for the analyzing the effect of ghost lineages on the use of branch length in gene trees to find the "true" species branching order (as in Fontaine et al. 2015)
 
