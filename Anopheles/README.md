@@ -1,13 +1,13 @@
 ## Scripts to generate Anopheles-like dataset for the manuscript _Recognizing the existence of ghost lineages reverses the results of evolutionary studies on genetic transfers_ 
 
-* Input file(s): 
-  *  `species_tree` contains the input tree generated with the software [ZOMBI](https://github.com/AADavin/Zombi) (Davin et al. 2020).
+## Input file(s): 
+`species_tree` contains the input tree generated with the software [ZOMBI](https://github.com/AADavin/Zombi) (Davin et al. 2020).
   
-* Requirements: 
+## Requirements: 
 
 To use these scripts, you need, python3 and R to be installed on your computer, and the following R packages: [_coala_](https://github.com/statgenlmu/coala) and ggplot2.
 
-* Command-line:
+## Command-line:
 
 
 The three following commands will produce the dataset used- and the figure presented- in the manuscript for the _Anopheles_ example. 
