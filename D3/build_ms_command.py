@@ -1,7 +1,7 @@
 #! /usr/bin/env python
-# Theo Tricou
+# Theo
 
-# Converte a species tree from Zombi simulation in ms command file readable by coala in R.
+# build ms command file from a phylogeny tree
 
 import os
 import sys
@@ -16,9 +16,9 @@ parser = argparse.ArgumentParser(description='Optional app description')
 
 parser.add_argument('tree', type = str, help = 'A phylogenetic tree')
 parser.add_argument('-o', '--output', type = str, nargs = "?", default = "Simulation", help = "Name of the simulation folder. Default is 'Simulation'.")
-parser.add_argument('-p', '--parameters', type = str, nargs = "?", default = False, help ='Optionnal parameters file argument')
-parser.add_argument('-s', '--sample', type = int, nargs = "?", default = False, help ='Sampling option. Optionnal parameters to selected how many leaves must be conserved')
-parser.add_argument("-v", "--verbose", action = "store_true", help = "Change output verbosity")
+parser.add_argument('-p', '--parameters', type = str, nargs = "?", default = False, help ='An optionnal parameters file argument')
+parser.add_argument('-s', '--sample', type = int, nargs = "?", default = False, help ='An optionnal parameters for sampling')
+parser.add_argument("-v", "--verbose", action = "store_true", help = "Increase output verbosity")
 args = parser.parse_args()
 
 def gene_t(node):
@@ -76,7 +76,6 @@ else:
     sampled = random.sample(extant,args.sample)
 
 
-
 # general ms parameters,if the parameters file existe the following default parameters are overruled
 if args.parameters == False:
     Ne = 100000
@@ -91,7 +90,7 @@ else:
     len_locus = read_param("LOCI_LENGTH")
     ploidy = read_param("PLOIDY")
     n_generation_to_root = read_param("N_GENERATION")
-    os.system('cp %s %s' % (args.parameters, args.output))
+    # os.system('cp %s %s' % (args.parameters, args.output))
     if not read_param("SEED") == 0:
         random.seed(int(read_param("SEED")))
         np.random.seed(int(read_param("SEED")))
@@ -122,7 +121,7 @@ for i in t.traverse('postorder'):
         pop_t =  pop_g / (4 * Ne)
         Merge += "feat_pop_merge(%s, %s, %s) + " % (str(pop_t), pop_r, pop_d) + "\n"
 
-t.write(outfile = os.path.join(args.output,'spe_tree'), format=1, format_root_node=True)
+# t.write(outfile = os.path.join(args.output,'spe_tree'), format=1, format_root_node=True)
 t.write(outfile = 'spe_tree', format=1, format_root_node=True)
 
 # randomly choose a donor lineage and a recipient (this recipient need to have a least one extant descendant)
@@ -155,10 +154,9 @@ while pop_recip == False:
 
 
 
-
 # migration Parameters
 migration_generation = 1 # number of generation during which the population migrate
-migration_fraction = 0.1 # fraction of the donor population that migrate in recipient population, during migration_generation generations
+migration_fraction = 0.3 # fraction of the donor population that migrate in recipient population, during migration_generation generations
 migration_time = migration_generation / (4 * Ne) # time of the migration in 4Ne
 migration_rate = migration_fraction / migration_time # miogration rate for ms given the fraction and length
 migration_start = (n_generation_to_root - tea_time) / (4 * Ne) # time at which migrattion star given the donor et the length of the migration
@@ -176,7 +174,8 @@ Migration_starts = "feat_migration(%s, pop_from = %s, pop_to = %s, symmetric = F
     migration_rate, str(gene_n(pop_donor)).split("_")[0], str(gene_n(pop_recip)).split("_")[0], migration_start)
 Migration_ends = "feat_migration(0, pop_from = %s, pop_to = %s, symmetric = FALSE, time = %s, locus_group = 'all') + \n" % (
     str(gene_n(pop_donor)).split("_")[0], str(gene_n(pop_recip)).split("_")[0], migration_end)
-Stat_sum = "sumstat_seg_sites() + sumstat_trees() \n"
+# Stat_sum = "sumstat_seg_sites() + sumstat_trees() \n"
+Stat_sum = "sumstat_trees() \n"
 True_migration = "\n# donor: " + pop_donor.name + " -- > recipient: " + pop_recip.name + ' at ' + str(n_generation_to_root - tea_time) + "\n"
 
 t.write(outfile = os.path.join(args.output,'spe_tree'), format=1, format_root_node=True)
@@ -187,6 +186,3 @@ with open(os.path.join(args.output,'ms_command.R'), "w") as output:
 
 if args.verbose:
     print(True_migration)
-
-
-#GNU Terry Pratchett

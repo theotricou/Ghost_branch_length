@@ -38,7 +38,7 @@ N_SIMULATION=1000
 # be distributed on. Must be 1 on Windows, and should also be 1 when using R
 # in a graphical environment (e.g. Rstudio).
 #
-N_CORE=6
+N_CORE=4
 #
 #
 # SEED used by the simulate function in coala.

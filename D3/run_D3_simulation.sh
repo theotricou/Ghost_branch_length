@@ -1,8 +1,7 @@
 #!/bin/bash
 # Theo
-#run complete simulation for one D3 test.
 
-# can be launch with `bash ~/GitHub/abba_baba/run_D3.sh
+#run D3 simulation for one species tree.
 
 # Zombi can be clone from git@github.com:AADavin/Zombi.git
 
