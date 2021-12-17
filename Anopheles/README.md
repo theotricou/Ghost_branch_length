@@ -1,4 +1,9 @@
-## Unique script for generating the dataset and plotting the results of the Anopheles analysis
+## Scripts to generate Anopheles-like dataset for the manuscript _Recognizing the existence of ghost lineages reverses the results of evolutionary studies on genetic transfers_ 
+
+* input files : 
+  *  `species_tree` contains the input tree generated with the software ZOMBI (Davin et al. 2020).
+  
+
 * `ms_generator.py` reads a tree (simualted with ZOMBI in this case), simulates an ingroup introgression or ghost introgression then generate a coala formated ms tree.
 
 * `ms_simulation.R` reads ms_command.R and contains all the functions, described in the header of the file.
