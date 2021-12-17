@@ -5,7 +5,7 @@
   
 * How to use the scripts:  
 The three foloowing commands will produce the dataset used- and the figure presented- in the manuscript for the _Anopheles_ example 
-```
+```bash
 ms_generator.py #reads the species tree, converts it to an ms-compatible format, simulates an introgression and outputs a [_coala_](https://github.com/statgenlmu/coala)-formated ms tree.
 ms_simulation.R #
 plot_Anopheles.R
