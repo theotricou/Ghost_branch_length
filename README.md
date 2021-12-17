@@ -1,12 +1,16 @@
 # Recognizing the existence of ghost lineages reverses the results of evolutionary studies on genetic transfers
 
-This repository contains the data and code associated with the manuscript entitled: "Ghost lineages invalidate or reverse several results on gene flows" by T Tricou, E Tannier and DM de Vienne.
+##Description
+This repository contains the data and code associated with the manuscript entitled: "Ghost lineages invalidate or reverse several results on gene flow" by T Tricou, E Tannier and DM de Vienne.
 
 
-* The folder `D3` contains script and datasets used for analyzing the effect of ghost lineages on the D3 statistics (Hahn and Hibbins 2019) interpretation
+* The folder `D3` contains script and datasets used for analyzing the effect of ghost lineages on the D3 statistics interpretation (Hahn and Hibbins 2019).
 
-* The folder `Anopheles` contains script and datasets used for the analyzing the effect of ghost lineages on the use of branch length in gene trees to find the "true" species branching order (as in Fontaine et al. 2015)
+* The folder `Anopheles` contains scripts and datasets used for analyzing the effect of ghost lineages on the methd that uses branch lengths in gene trees to find the "true" species branching order (Fontaine et al. 2015).
 
-* The folder `Stem-length` contains the script used to generate the dataset that allowed exploring the effect of ghost lineages on the use of stem-length to relatively time successive acquisition events (as in Pittis and Gabaldon, 2016).
+* The folder `Stem-length` contains the scripts used to generate the dataset that allowed exploring the effect of ghost lineages on the use of the stem-length method to relatively time successive acquisition events (Pittis and Gabaldon, 2016).
 
 
+----------
+##Contacts
+Please contact [Theo Tricou](mailto:theo.tricou@univ-lyon1.fr) or [Damien de Vienne](damien.de-vienne@univ-lyon1.fr) if you have questions or if you need help for anderstanding and/or running the scripts provided in this repository.
