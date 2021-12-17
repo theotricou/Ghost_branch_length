@@ -1,6 +1,9 @@
 #! /usr/bin/env python3
 # Theo Tricou
 
+
+
+
 import os
 import sys
 from ete3 import Tree as tr
@@ -64,7 +67,7 @@ t.write(outfile = 'spe_tree', format=1, format_root_node=True)
 
 
 migration_generation = 1 # number of generation during which the population migrate
-migration_fraction = 0.2
+migration_fraction = 0.5
 migration_start = 0
 migration_time = migration_generation / (4 * Ne) # time of the migration in 4Ne
 migration_rate = migration_fraction / migration_time

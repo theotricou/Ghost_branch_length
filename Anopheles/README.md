@@ -3,6 +3,8 @@
 
 * `ms_simulation.R` reads ms_command.R and contains all the functions, described in the header of the file.
 
+* `species_tree` is the newick species tree used for this analysis.
+
 * `ingroup_int_final.txt` is the dataset produced by simulating only ingroup introgression
 
 * `ghost_int_final.txt` is the dataset produced by simulating only ghost introgression from outside the trîplet chosen
