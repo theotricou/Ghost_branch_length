@@ -1,4 +1,4 @@
-# Recognizing the existence of ghost lineages reverses the results of evolutionary studies on genetic transfers
+# "Ghost lineages invalidate or reverse several results on gene flow". T. Tricou, E. Tannier and D.M. de Vienne
 
 ## Description
 This repository contains the data and code associated with the manuscript entitled: "Ghost lineages invalidate or reverse several results on gene flow" by T Tricou, E Tannier and DM de Vienne.
