@@ -12,4 +12,4 @@ This repository contains the data and code associated with the manuscript entitl
 
 
 ## Contacts
-Please contact [Theo Tricou](mailto:t.tricou@gmail.com) or [Damien de Vienne](damien.de-vienne@univ-lyon1.fr) if you have questions or if you need help for anderstanding and/or running the scripts provided in this repository.
+Please contact [Theo Tricou](mailto:t.tricou@gmail.com) or [Damien de Vienne](damien.de-vienne@univ-lyon1.fr) if you have questions or if you need help to understand and/or to run the scripts provided in this repository.
