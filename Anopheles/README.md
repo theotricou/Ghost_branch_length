@@ -16,7 +16,7 @@ The first script (`ms_generator.py`) reads the species tree, converts it to an m
 
 The second script (`ms_simulation.R`) reads the file produced by the previous script and executes ms. 
 
-The third script (`plot_Anopheles.R`) runs R to produces the figure presented in the Results section (subsection Anopheles) of the manuscript.
+The third script (`plot_Anopheles.R`) runs R to produce the figure presented in the Results section (subsection _Anopheles_) of the manuscript.
 
 
 ```shell
