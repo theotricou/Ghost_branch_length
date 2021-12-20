@@ -1,8 +1,8 @@
 # 2__Anopheles_ method
 
-## Input_files
+This folder is organised as fllowos: 
 
-`species_tree` fle, _i.e._ the input tree generated with the software [ZOMBI](https://github.com/AADavin/Zombi) (Davin et al. 2020).
+**`Input_files`** contains the `species_tree` fle, _i.e._ the input tree generated with the software [ZOMBI](https://github.com/AADavin/Zombi) (Davin et al. 2020).
   
 ## Scripts
 
@@ -33,5 +33,5 @@ Datasets produced with the scripts described above and used in the manuscript.
 
 ## Requirements
 
-To use these scripts, you need, python3 and R installed on your computer, and the following R packages: [_coala_](https://github.com/statgenlmu/coala) and ggplot2.
+To use these scripts, you need, python3 and R installed on your computer, and the following R packages: [_coala_](https://github.com/statgenlmu/coala) and ggplot2. You also need the [ms software](http://home.uchicago.edu.inee.bib.cnrs.fr/~rhudson1/source/mksamples.html) (Hudson, 2002)
 
