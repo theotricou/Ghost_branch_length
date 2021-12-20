@@ -2,7 +2,9 @@
 
 This folder is organised as follows: 
 
-* `Input_files/` contains the `species_tree` file, _i.e._ the input tree generated with the software [ZOMBI](https://github.com/AADavin/Zombi) (Davin et al. 2020).
+### **`Input_files/`** ###
+
+Contains the `species_tree` file, _i.e._ the input tree generated with the software [ZOMBI](https://github.com/AADavin/Zombi) (Davin et al. 2020).
   
 * `Scripts/` contains the scripts used to produce the dataset used- and the figure presented- in the manuscript. They MUST be used in the following order:  
 ```shell
