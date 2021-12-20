@@ -25,5 +25,5 @@ The third script (`plot_Anopheles.R`) runs R to produce the figure presented in 
 
 ## Requirements
 
-To use these scripts, you need, python3 and R installed on your computer, and the following R packages: [_coala_](https://github.com/statgenlmu/coala) and ggplot2. You also need the [ms software](http://home.uchicago.edu.inee.bib.cnrs.fr/~rhudson1/source/mksamples.html) (Hudson, 2002)
+To use these scripts, you need, python3 and R installed on your computer, and the following R packages: [_coala_](https://github.com/statgenlmu/coala) and ggplot2. You also need the [ms software](http://home.uchicago.edu.inee.bib.cnrs.fr/~rhudson1/source/mksamples.html) (Hudson, 2002).
 
