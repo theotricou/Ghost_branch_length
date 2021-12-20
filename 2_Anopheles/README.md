@@ -1,11 +1,11 @@
 
-# Anopheles
+# Anopheles #
 
 This folder is organised as follows: 
 
 ### **`Input_files/`** ###
 
-Contains the `species_tree` file, _i.e._ the input tree generated with the software [ZOMBI](https://github.com/AADavin/Zombi) (Davin et al. 2020).
+Contains the `species_tree` file, _i.e._ the input tree generated with the software [ZOMBI](https://github.com/AADavin/Zombi) (Davin et al. 2020) for the Anopheles example.
   
 ### **`Scripts/`** ###
 
@@ -33,7 +33,7 @@ Contains the datasets produced with the scripts described above and used in the 
 
 ----------------------
 
-## Requirements
+## Requirements ##
 
 To use these scripts, you need, python3 and R installed on your computer, and the following R packages: [_coala_](https://github.com/statgenlmu/coala) and ggplot2. You also need the [ms software](http://home.uchicago.edu.inee.bib.cnrs.fr/~rhudson1/source/mksamples.html) (Hudson, 2002).
 
