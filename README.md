@@ -1,4 +1,5 @@
-# _Ghost lineages invalidate or reverse several results on gene flow_ by T. Tricou, E. Tannier and D.M. de Vienne
+# _Ghost lineages invalidate or reverse several results on gene flow_
+T. Tricou, E. Tannier and D.M. de Vienne
 
 ## Description
 This repository contains the data and code associated with the manuscript entitled: "Ghost lineages invalidate or reverse several results on gene flow" by T Tricou, E Tannier and DM de Vienne.
