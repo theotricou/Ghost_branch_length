@@ -1,3 +1,4 @@
+
 # Anopheles
 
 This folder is organised as follows: 
@@ -22,12 +23,16 @@ The second script (`ms_simulation.R`) reads the file produced by the previous sc
 
 The third script (`plot_Anopheles.R`) runs R to produce the figure presented in the Results section (subsection _Anopheles_) of the manuscript.
 
-### **`Datasets/`** ### contains the datasets produced with the scripts described above and used in the manuscript.
+### **`Datasets/`** ###
+
+Contains the datasets produced with the scripts described above and used in the manuscript.
 
 `ghost_int_final.txt`: data for the introgression event coming from a ghost lineage.
 
 `ingroup_int_final.txt`: data for the introgression event coming from within the ingroup.
---------------------------------------------------
+
+----------------------
+
 ## Requirements
 
 To use these scripts, you need, python3 and R installed on your computer, and the following R packages: [_coala_](https://github.com/statgenlmu/coala) and ggplot2. You also need the [ms software](http://home.uchicago.edu.inee.bib.cnrs.fr/~rhudson1/source/mksamples.html) (Hudson, 2002)
